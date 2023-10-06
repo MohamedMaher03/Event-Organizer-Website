@@ -1,0 +1,365 @@
+ @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+ *{
+    font-family: 'Nunito', sans-serif;
+    color: #eee;
+    padding: 0;
+    margin: 0;
+ }
+
+ :root{
+    --main-color:blue;
+    --sec-color:#979797;
+ }
+
+ html{
+    scroll-behavior: smooth;
+ }
+
+body{
+   background-color: #222;
+}
+
+a{
+text-decoration: none;
+}
+
+
+
+header{
+    background-color: #333;
+    padding: 1rem 8%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+header a {
+    color:var(--sec-color);
+    font-size: 20px;
+}
+
+nav a{
+    text-transform: capitalize;
+    padding-left: 5px;
+    color: white;
+}
+
+nav a:hover{
+    transition: 0.4s linear;
+    color:var(--main-color);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+header a span{
+    font-weight: bold;
+    color: var(--main-color);
+    text-transform: capitalize;
+    font-size: larger;
+}
+
+section{
+    padding: 20px 100px 50px;
+}
+
+.home{
+    font-size: 20px;
+    padding-top: 80px;
+    text-align: center;
+}
+.home a{
+    display: inline-block;
+  padding: 10px 20px; 
+  background-color: #AEAEAE; 
+  color: #fff; 
+  text-decoration: none;
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  text-align: center;
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-bottom: 20px; 
+}
+.home p{
+    text-align: center;
+    font-size: 45px;
+    font-style: bold;
+    color:var(--sec-color);
+    text-transform: uppercase;
+    padding: 0 25% 10px;
+    text-align: center;
+}
+.home .imgs img{
+   width: 33%;
+   border-radius: 15px;
+}
+.home .imgs{
+    display: flex;
+    justify-content: center;
+  
+}
+.home p span{
+    color: var(--main-color);
+}
+.price{
+   display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--sec-color);
+}
+h1 span{
+    color: var(--main-color);
+}
+.price h1 span{
+    color: var(--main-color);
+}
+
+.price h3{
+    text-transform: capitalize;
+    padding: 10px 0;
+    background-color: var(--main-color);
+    padding: 20px 0;   
+}
+
+.price h2{
+    padding: 10px 0;
+}
+
+.price .box ul li{
+    list-style-type:none;
+    padding: 7px;
+    text-transform: capitalize;
+}
+
+.price .box .styled{
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: var(--sec-color);
+    color: white;
+    text-transform: capitalize;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.styled:hover{
+    box-shadow: 5px 0px 10px 0 black;
+}
+
+.box i{
+    padding-right: 10px;
+}
+
+.box{
+    background-color: #333;
+    text-align: center;
+    border-radius: 10px;
+    width: 22.5%;
+}
+
+.sbox{
+    background-color: #333;
+    text-align: center;
+    padding: 20px 0;
+    width: 30%;
+    margin: 20px 0;
+}
+
+.sbox i{
+    padding-bottom: 7.5px;
+}
+.sbox h2{
+color: var(--sec-color);
+text-transform: capitalize;
+}
+.sbox p{
+    padding-top: 7.5px;
+    color: white;
+   
+}
+.service{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;   
+}
+.about{
+    display: flex;
+    justify-content: space-around;
+}
+
+.about .paragraph h2{
+    text-transform: capitalize;
+    color: var(--sec-color);
+    padding-bottom: 15px;
+    font-size: xx-large;
+}
+.about img{
+    width: 45%;
+    height: 340px;
+}
+
+.about .paragraph{
+    width: 50%;
+}
+
+.about .paragraph p{
+    padding-bottom: 15px;
+}
+
+.about .paragraph a{
+    display: inline-block;
+    text-transform: capitalize;
+    padding: 10px 20px; 
+    background-color: var(--sec-color); 
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid --sec-color; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-align: center;
+    font-size: 16px;
+}
+
+.gallery img{
+    width: 27.5%;
+    border: 10px solid black;
+    height: 250px;
+    margin: 15px;
+}
+
+.contact form .styled{
+    width: 160px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: var(--sec-color);
+    color: white;
+    text-transform: capitalize;
+    margin: 20px 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contact form .contactbox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .contactbox .inp{
+    width: 45%;
+    background-color: var(--sec-color);
+    padding: 20px;
+    margin: 10px;
+}
+::placeholder {
+    color: white;
+   
+}
+textarea::placeholder {
+   padding: 10px;
+}
+.contact form textarea{
+    width: 100%;
+    height: 220px;
+    background-color: var(--sec-color);
+}
+.contact{
+    text-align: center;
+}
+footer{
+    background-color: black;
+}
+footer .mfc{
+    display: flex;
+    justify-content: space-around;
+}
+footer .fc{
+    text-transform: capitalize;
+    padding: 20px 50px ;
+}
+footer .fc li{
+    padding: 5px;
+    list-style-type: none;
+    cursor: pointer;
+}
+footer .fc li:hover{
+    color: blue;
+    padding: 10px;
+}
+ footer .fc h2{
+    padding-bottom: 7.5px;
+    text-transform: capitalize;
+}
+footer .fc i{
+    padding-right: 5px;
+}
+
+footer  hr{
+    color: white;
+}
+footer p{
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+footer p span{
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+
+.review .rc {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    text-transform: capitalize;
+    width: 300px;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile img {
+    width: 100px; 
+    border-radius: 50%; 
+}
+
+.name {
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+.label {
+    font-size: 16px; 
+    color: #888; 
+}
+
+.review .rc h2{
+  
+    color: var(--sec-color);
+}
+.ls{
+    display: flex;
+    justify-content: space-between;
+}
+.review .rc2 i{
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+.review p{
+    padding: 22px;
+}
